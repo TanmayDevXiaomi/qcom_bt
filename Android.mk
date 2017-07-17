@@ -1,6 +1,6 @@
 # TODO:  Find a better way to separate build configs for ADP vs non-ADP devices
 ifneq ($(TARGET_BOARD_AUTO),true)
-  ifneq ($(filter caf-msm8916 caf-msm8952 caf-msm8992 caf-msm8996 caf-msm8998,$(TARGET_QCOM_BLUETOOTH_VARIANT)),)
+  ifneq ($(filter caf-msm8916 caf-msm8937 caf-msm8952 caf-msm8992 caf-msm8996 caf-msm8998,$(TARGET_QCOM_BLUETOOTH_VARIANT)),)
     ifeq (caf-msm8994,$(TARGET_QCOM_BLUETOOTH_VARIANT))
         TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8992
     endif
